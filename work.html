@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>John's Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------------- Header ----------------->
+    <header class="header container">
+      <ul class="header__nav ">
+        <li><a class="header__link" href="index.html">Home</a></li>
+        <li><a class="header__link" href="work.html">Works</a></li>
+        <li><a class="header__link" href="blog.html">Blog</a></li>
+        <li><a class="header__link" href="#contact">Contact</a></li>
+      </ul>
+      <button 
+       class="header__button menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+        <svg class="header__icon">
+          <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <!------------- Main ----------------->
+    <main>
+        <!------------- Work ----------------->
+      <section class="work container">
+        <h3 class="subtitle">Featured works</h3>
+        <ul class="work__list">
+          <li class="work__item">
+            <img
+              class="work__image"
+              src="./images/work1.png"
+              alt="design photo"
+            />
+            <div class="work__item__inner">
+              <h3 class="work__subtitle">Designing Dashboards</h3>
+              <ul class="work__calendar">
+                <li class="work__calendar__item">2020</li>
+                <li class="work__calendar__item">Dashboard</li>
+              </ul>
+              <p class="work__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </li>
+          <li class="work__item">
+            <img
+              class="work__image"
+              src="./images/work2.png"
+              alt="design photo"
+            />
+            <div class="work__item__inner">
+              <h3 class="work__subtitle">Vibrant Portraits of 2020</h3>
+              <ul class="work__calendar">
+                <li class="work__calendar__item">2018</li>
+                <li class="work__calendar__item">Illustration</li>
+              </ul>
+              <p class="work__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </li>
+          <li class="work__item">
+            <img
+              class="work__image"
+              src="./images/work3.png"
+              alt="design photo"
+            />
+            <div class="work__item__inner">
+              <h3 class="work__subtitle">36 Days of Malayalam type</h3>
+              <ul class="work__calendar">
+                <li class="work__calendar__item">2018</li>
+                <li class="work__calendar__item">Typography</li>
+              </ul>
+              <p class="work__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </li>
+           <li class="work__item">
+            <img
+              class="work__image"
+              src="./images/work4.png"
+              alt="design photo"
+            />
+            <div class="work__item__inner">
+              <h3 class="work__subtitle">Components</h3>
+              <ul class="work__calendar">
+                <li class="work__calendar__item">2019</li>
+                <li class="work__calendar__item">Components, Design</li>
+              </ul>
+              <p class="work__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!------------- Footer ----------------->
+    <footer class="footer container" id="contact">
+      <ul class="icon__list">
+        <li>
+          <a class="icon__link" href="" target="_blank">
+            <svg class="icon">
+              <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon__link" href="" target="_blank">
+            <svg class="icon">
+              <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon__link" href="" target="_blank">
+            <svg class="icon">
+              <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon__link" href="" target="_blank">
+            <svg class="icon">
+              <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__text">Copyright &#169 2020 All rights reserved</p>
+    </footer>
+    <!------------ JS Files --------------->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="link" href="blog.html"> Blog </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="work.html"> Work </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="#contact"> Contact </a>
+        </li>
+      </ul>
+
+      
+
+      
+    </div>
+  </body>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+</html>
