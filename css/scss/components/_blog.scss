@@ -1,0 +1,44 @@
+//blog stilization
+
+.blog {
+  margin-top: 36px;
+  margin-bottom: 50px;
+  &__list {
+    margin-top: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  &__item {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--grey-color);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2;
+    color: var(--black-color);
+  }
+  .post__text1 {
+    color: #8695a4;
+  }
+  .post__text {
+    color: var(--black-color);
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .blog {
+    margin-top: 90px;
+    &__list {
+      margin-top: 55px;
+      align-items: flex-start;
+    }
+    &__item {
+      max-width: 682px;
+    }
+    &__title {
+      font-size: 44px;
+    }
+  }
+}

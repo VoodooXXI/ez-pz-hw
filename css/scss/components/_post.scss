@@ -1,0 +1,76 @@
+//Post stilization
+
+.post {
+  background-color: var(--bg-color);
+  padding: 0px 10px 38px 10px;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+  &__item {
+    max-width: 350px;
+    padding: 12px 22px 22px 22px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__subtitle {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.36;
+  }
+  &__text {
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &__calendar {
+    display: flex;
+    gap: 0px;
+    &__item:first-child {
+      border-right: 1px solid var(--black-color);
+      padding-right: 24px;
+    }
+    &__item:last-child {
+      padding-left: 24px;
+    }
+  }
+  &__link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .post {
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      max-width: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .post {
+    &__item {
+      max-width: 397px;
+    }
+    &__element {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__link {
+      display: block;
+      color: var(--secondary-color);
+      font-size: 18px;
+      line-height: 3.33;
+    }
+  }
+}

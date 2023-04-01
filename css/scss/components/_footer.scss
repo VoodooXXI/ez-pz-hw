@@ -1,0 +1,14 @@
+//footer stilization
+.footer {
+  margin-top: 150px;
+  padding: 51px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--black-color);
+    text-align: center;
+  }
+}

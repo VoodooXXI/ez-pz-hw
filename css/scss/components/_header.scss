@@ -1,0 +1,49 @@
+//Header stilization
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  border-bottom: 1px solid var(--grey-color);
+  &__button {
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+  }
+  &__icon {
+    stroke: currentColor;
+    width: 30px;
+    height: 18px;
+  }
+  &__nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .header {
+    height: 100px;
+    align-items: center;
+
+    &__button {
+      display: none;
+    }
+    &__nav {
+      display: flex;
+      gap: 33px;
+    }
+    &__link {
+      color: var(--black-color);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.45;
+      &:hover {
+        color: var(--brand-color);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+}
